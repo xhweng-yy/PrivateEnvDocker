@@ -1,11 +1,11 @@
 # PrivateEnvDocker
-## 2.1.无外网安装docker
+## 1.1.无外网安装docker
 通过已经下载的docker安装包，在目标服务器上进行安装
  
-### 2.1.1 解压缩docker安装包
+### 1.1.1 解压缩docker安装包
 tar xzvf docker-19.03.11.tgz
 cp docker/* /usr/bin/
-### 2.1.2 编写服务
+### 1.1.2 编写服务
 `vim /usr/lib/systemd/system/docker.service`
 
 ```
@@ -29,13 +29,13 @@ StartLimitInterval=60s
 [Install]
 WantedBy=multi-user.target
 ```
-### 2.1.3 设置开机自启
+### 1.1.3 设置开机自启
 systemctl daemon-reload
 systemctl start docker && systemctl enable docker
-### 2.1.4查看docker安装信息
+### 1.1.4查看docker安装信息
 docker info//systemctl docker status 
 
-### 2.2.1 安装docker compose
+### 1.1.1 安装docker compose
 将docker compose 离线安装包docker-compose-Linux-x86_64上传至服务器，在安装包目录下执行以下命令：
 
 ```
