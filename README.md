@@ -55,9 +55,9 @@ sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 
 
 验证说明：
-1、将准备好的docker-compose文件复制到/usr/local/bin/
-2、给文件授权
-3、使用docker加载安装包
-4、运行docker-compose
-5、查看安装好的docker-compose版本：docker-compose -v
+- 1、将准备好的docker-compose文件复制到/usr/local/bin/
+- 2、给文件授权
+- 3、使用docker加载安装包
+- 4、运行docker-compose
+- 5、查看安装好的docker-compose版本：docker-compose -v
  
